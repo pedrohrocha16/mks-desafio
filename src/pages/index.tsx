@@ -27,7 +27,7 @@ export default function Home() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[40px] mb-[35px]">
         {data.products && data.products.map((product: any) => (
           <div key={product.id}>
-            <Card src={product.photo}  product={product.name} price={product.price} description={"Redesigned from scratch and completely revised."}/>
+            <Card product={product}/>
           </div>
         ))}
       </div>

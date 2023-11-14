@@ -5,6 +5,12 @@ module.exports = {
     ignoreDuringBuilds: true,
   },
   images: {
-    domains: ["mks-sistemas.nyc3.digitaloceanspaces.com"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "mks-sistemas.nyc3.digitaloceanspaces.com",
+      },
+    ],
   },
 };
+
