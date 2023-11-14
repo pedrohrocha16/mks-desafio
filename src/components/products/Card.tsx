@@ -21,7 +21,7 @@ function Card({ src, product, price, description }: Props) {
                <div className={`text-[16px] w-[124px] ${montMed.className}`} >
                   <p>{product}</p>
                </div>
-               <div className={`${montPrice.className} m-1 justify-center items-center text-white min-w-[64px] max-w-[200px] h-[26px] text-center rounded-[5px] bg-[#373737]`}>
+               <div className={`${montPrice.className} mr-1 justify-center items-center text-white min-w-[64px] max-w-[200px] h-[26px] text-center rounded-[5px] bg-[#373737]`}>
                   <p>R${price}</p>
                </div>
             </div>
