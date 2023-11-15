@@ -17,14 +17,14 @@ function Products_Cart({ product }: Props) {
             <p>{product.name}</p>
          </div>
          <div>
-            <div className="flex h-[60px] text-[25px] rounded-md items-center justify-center flex-row gap-3 border-zinc-200 border-[3px]">
+            <div className="flex h-[60px] text-[24px] text-center rounded-md items-center justify-center gap-3 border-zinc-300 border-[1px]">
                <MdRemove />
                <p>0</p>
                <MdAdd />
             </div>
          </div>
-         <div>
-            <p className={`${montPrice.className}`}>R${product.price}</p>
+         <div className='m-1'>
+            <p className={`${montPrice.className} text-[14px]`}>R${product.price}</p>
          </div>
       </div>
    )
