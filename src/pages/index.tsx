@@ -20,8 +20,6 @@ export default function Home() {
     fetchData()
   }, [])
 
-  console.log(data)
-
   return (
     <div className="flex flex-col items-center min-h-[80vh] m-[25px] w-[100%]">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[40px] mb-[35px]">

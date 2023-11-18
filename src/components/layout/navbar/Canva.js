@@ -18,10 +18,10 @@ function CanvaBar() {
   return (
     <>
       <div>
-        <TiShoppingCart className="text-[25px]" onClick={handleShow} />
+        <TiShoppingCart className="text-[25px] cursor-pointer" onClick={handleShow} />
       </div>
       <div>
-        <Offcanvas show={show} onHide={handleClose}>
+        <Offcanvas show={show} onHide={handleClose} className="overflow-auto">
           <Offcanvas.Header closeButton className="bg-[#0F52BA]">
             <Offcanvas.Title>
               <h1 className={` ${montPrice.className} text-white text-[35px] `}>

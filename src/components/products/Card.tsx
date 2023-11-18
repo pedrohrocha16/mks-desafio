@@ -41,7 +41,7 @@ function Card({ product }: Props) {
                <p>Redesigned from scratch and completely revised.</p>
             </div>
          </div>
-         <div className='text-white flex justify-center items-center gap-2 w-[218px] h-[32px] bg-[#0F52BA] rounded-b-[7px]' onClick={handleProductClick}>
+         <div className='text-white flex justify-center items-center gap-2 w-[218px] h-[32px] bg-[#0F52BA] rounded-b-[7px] cursor-pointer' onClick={handleProductClick}>
             <LuShoppingBag className={`${montBold.className}`} /><p className={`${montBold.className} h-[16px] justify-center items-center mt-2`}>COMPRAR</p>
          </div>
       </div>

@@ -16,7 +16,7 @@ function Header({ }: Props) {
                   <p className={`font-extralight text-[20px] ${montBold}`}>Sistemas</p>
                </div>
             </div>
-            <div className='w-[90px] gap-2 flex p-2 items-center justify-center h-[45px] bg-white pr-[50px] rounded-[8px]'>
+            <div className='w-[90px] gap-2 flex p-2 items-center justify-center h-[45px] bg-white pr-[50px] rounded-[8px] select-none'>
                <CanvaBar />
                0
             </div>
