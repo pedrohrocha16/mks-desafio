@@ -5,9 +5,12 @@ import { montPrice } from "@/styles/fontes/Fontes";
 import Products_Cart from "@/components/products/Products_Cart";
 
 import { useSelector } from "react-redux";
-
+import {selectProductsTotalPrice} from '../../../redux/cart/car.selectors'
 
 function CanvaBar() {
+
+  const productsTotalPrice = useSelector(selectProductsTotalPrice);
+
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -18,9 +21,12 @@ function CanvaBar() {
   return (
     <>
       <div>
-        <TiShoppingCart className="text-[25px] cursor-pointer" onClick={handleShow} />
+        <TiShoppingCart
+          className="text-[25px] cursor-pointer"
+          onClick={handleShow}
+        />
       </div>
-      <div className="">
+      <div>
         <Offcanvas show={show} onHide={handleClose} className="overflow-auto">
           <Offcanvas.Header closeButton className="bg-[#0F52BA]">
             <Offcanvas.Title>
@@ -31,15 +37,18 @@ function CanvaBar() {
           </Offcanvas.Header>
           <Offcanvas.Body className="bg-[#0F52BA] m-0 p-0">
             <div className="min-h-[61dvh] sm:min-h-[62dvh] pl-2 sm:pl-4 pr-2 pt-4">
-              {products && products.map((cartItem) => (
-                <Products_Cart product={cartItem} />
-              ))}
+              {products &&
+                products.map((cartItem) => (
+                  <div key={cartItem.id}>
+                    <Products_Cart product={cartItem} />
+                  </div>
+                ))}
             </div>
             <div
               className={`flex justify-between pl-10 pr-10 min-h-[5vh] mt-[2vh] mb-[2vh] ${montPrice.className} text-white text-[28px]`}
             >
               <div>Total:</div>
-              <div>R$0,00</div>
+              <div>R${productsTotalPrice.toFixed(2)}</div>
             </div>
             <div
               className={`flex justify-center items-center bg-black w-[100%] h-[108px] ${montPrice.className} text-white text-[28px]`}

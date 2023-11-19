@@ -17,6 +17,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/pages/index.jsx", "src/components/layout/navbar/Canva.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/pages/index.jsx", "src/components/layout/navbar/Canva.js", "src/redux/cart/actions.js", "src/redux/cart/action-types.js", "src/components/products/Products_Cart.js", "src/redux/cart/reducer.js"],
   "exclude": ["node_modules"]
 }

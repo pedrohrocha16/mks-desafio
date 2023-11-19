@@ -1,10 +1,18 @@
 import { montLight, montBold } from '@/styles/fontes/Fontes'
-import React from 'react'
+import React, { useMemo } from 'react'
 import CanvaBar from './Canva'
+import { useSelector } from 'react-redux'
 
 type Props = {}
 
 function Header({ }: Props) {
+
+   const { products } = useSelector((rootReducer: any) => rootReducer.cartReducer)
+
+   const productsCount = useMemo(() => {
+      return products.reduce((acc: any, curr: any) => acc + curr.quantity, 0)
+   }, [products])
+
    return (
       <div className='flex justify-between bg-[#0F52BA] h-[101px]'>
          <div className='flex flex-row w-[100%] justify-between pl-[35px] pr-[60px] pt-[35px]'>
@@ -18,7 +26,7 @@ function Header({ }: Props) {
             </div>
             <div className='w-[90px] gap-2 flex p-2 items-center justify-center h-[45px] bg-white pr-[50px] rounded-[8px] select-none'>
                <CanvaBar />
-               0
+               {productsCount}
             </div>
          </div>
       </div>
