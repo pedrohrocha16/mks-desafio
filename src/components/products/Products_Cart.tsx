@@ -11,7 +11,7 @@ type Props = {
 function Products_Cart({ product }: Props) {
 
    return (
-      <div className='gap-[6px] flex items-center justify-between p-1 h-[125px] bg-white rounded-[8px] mb-4 w-[360px]' key={product.id}>
+      <div className='gap-[6px] flex items-center justify-between p-1 h-[125px] bg-white rounded-[8px] mb-4 max-w-[360px]' key={product.id}>
          <Image src={product.photo} width={75} height={80} alt={"product"} />
          <div className={`w-[80px] ${montMed.className}`}>
             <p>{product.name}</p>

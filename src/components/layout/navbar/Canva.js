@@ -20,7 +20,7 @@ function CanvaBar() {
       <div>
         <TiShoppingCart className="text-[25px] cursor-pointer" onClick={handleShow} />
       </div>
-      <div>
+      <div className="">
         <Offcanvas show={show} onHide={handleClose} className="overflow-auto">
           <Offcanvas.Header closeButton className="bg-[#0F52BA]">
             <Offcanvas.Title>
@@ -30,13 +30,13 @@ function CanvaBar() {
             </Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body className="bg-[#0F52BA] m-0 p-0">
-            <div className="min-h-[61vh] sm:min-h-[62vh] pl-2 pr-5 pt-4">
+            <div className="min-h-[61dvh] sm:min-h-[62dvh] pl-2 sm:pl-4 pr-2 pt-4">
               {products && products.map((cartItem) => (
                 <Products_Cart product={cartItem} />
               ))}
             </div>
             <div
-              className={`flex justify-between pl-10 pr-10 min-h-[5vh] mb-[2vh] ${montPrice.className} text-white text-[28px]`}
+              className={`flex justify-between pl-10 pr-10 min-h-[5vh] mt-[2vh] mb-[2vh] ${montPrice.className} text-white text-[28px]`}
             >
               <div>Total:</div>
               <div>R$0,00</div>
