@@ -35,8 +35,8 @@ function CanvaBar() {
               </h1>
             </Offcanvas.Title>
           </Offcanvas.Header>
-          <Offcanvas.Body className="bg-[#0F52BA] m-0 p-0">
-            <div className="min-h-[61dvh] sm:min-h-[62dvh] pl-2 sm:pl-4 pr-2 pt-4">
+          <Offcanvas.Body className="bg-[#0F52BA] w-[100%] m-0 p-0">
+            <div className="min-h-[61dvh] sm:min-h-[62dvh] p-3 w-[100%]">
               {products &&
                 products.map((cartItem) => (
                   <div key={cartItem.id}>
