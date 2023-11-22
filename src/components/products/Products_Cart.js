@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
 import { MdRemove, MdAdd } from "react-icons/md";
-import { IoMdTrash } from "react-icons/io";
 import { montMed, montPrice } from "@/styles/fontes/Fontes";
 import { useDispatch } from "react-redux";
 import {
@@ -39,7 +38,7 @@ function Products_Cart({ product }) {
           {product.quantity > 0 ? (
             <MdRemove className="text-[25px]" onClick={handleDecreaseClick} />
           ) : (
-            <IoMdTrash className="text-[25px]" onClick={handleRemoveClick} />
+            handleRemoveClick()
           )}
           <p className="select-none">{product.quantity}</p>
           <MdAdd className="text-[25px]" onClick={handleIncreaseClick} />
@@ -56,4 +55,3 @@ function Products_Cart({ product }) {
 
 export default Products_Cart;
 
-// : <IoMdTrash className="text-[25px]" />

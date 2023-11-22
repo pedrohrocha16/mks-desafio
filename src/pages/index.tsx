@@ -2,7 +2,6 @@ import SkeletonLoader from "@/components/layout/skeleton/Skeleton";
 import Card from "@/components/products/Card";
 import { useEffect, useState } from 'react'
 
-import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import 'react-loading-skeleton/dist/skeleton.css'
 
 const url = "https://mks-frontend-challenge-04811e8151e6.herokuapp.com/api/v1/products?page=1&rows=8&sortBy=id&orderBy=ASC"
