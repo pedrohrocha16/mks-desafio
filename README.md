@@ -1,6 +1,6 @@
 # MKS Sistemas
 
-O desafio técnico para a vaga de front-end, que se revelou ser falsa no final, envolvia a tarefa de replicar precisamente o layout fornecido no Figma. Além disso, solicitava a integração de uma API de lista de produtos, a implementação de um carrinho de compras, a utilização do skeleton para o carregamento e a realização de testes unitários. Certamente, uma experiência desafiadora, mesmo que tenha sido em um contexto inesperado.
+O desafio técnico para a vaga uma referida de front-end, que se revelou ser falsa no final, envolvia a tarefa de replicar precisamente o layout fornecido no Figma. Além disso, solicitava a integração de uma API de lista de produtos, a implementação de um carrinho de compras, a utilização do skeleton para o carregamento e a realização de testes unitários. Certamente, uma experiência desafiadora, mesmo que tenha sido em um contexto inesperado.
 
 ## Pré-requisitos
 

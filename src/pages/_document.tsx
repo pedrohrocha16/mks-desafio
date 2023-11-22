@@ -4,6 +4,7 @@ export default function Document() {
   return (
     <Html lang="pt-br">
       <Head />
+      <title>MKS Sistemas</title>
       <script src="https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js" crossOrigin='anonymous'></script>
 
       <script
