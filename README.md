@@ -1,43 +1,20 @@
-Diretrizes do desafio
-===========================
+# MKS Sistemas
 
-O objetivo principal desse teste é avaliar sua capacidade de escrever código limpo, bem testado e reutilizável. Ao terminar, faça o deploy da aplicação e mande-nos o link.
+O desafio técnico para a vaga de front-end, que se revelou ser falsa no final, envolvia a tarefa de replicar precisamente o layout fornecido no Figma. Além disso, solicitava a integração de uma API de lista de produtos, a implementação de um carrinho de compras, a utilização do esqueleto para o carregamento e a realização de testes unitários. Certamente, uma experiência desafiadora, mesmo que tenha sido em um contexto inesperado.
 
-Tarefa (funcional)
----------------
+## Pré-requisitos
 
-Para esse desafio, você deve consumir nossa [API REST de produtos](https://mks-frontend-challenge-04811e8151e6.herokuapp.com/api-docs/) para exibir a lista de produtos da loja.
+Certifique-se de ter o Node.js instalado na sua máquina.
 
-A aplicação deve conter apenas uma página/rota e um carrinho.
+## Instalação
 
-- <b>Loja</b>: A lista de produtos deve ser buscada de nossa API, use um shimmer/skeleton enquanto estiver em loading.
- 
-- <b>Carrinho</b>: O carrinho deve conter todos os produtos selecionados, juntamente com a opção de aumentar a quantidade de cada produto selecionado.
+1. Clone este repositório: `git clone https://github.com/pedrohrocha16/mks-desafio.git`
+2. Navegue até o diretório do projeto: `cd mks-desafio`
+3. Instale as dependências: `npm install`
 
-Use do Jest e a testing-library para realizar os testes unitários.
+## Uso
 
-Recursos
----------------
+Para iniciar a aplicação, use o seguinte comando:
 
-UI/UX: [Figma loja](https://www.figma.com/file/Z4z8osDbK1ET7cjNzFRMrK/MKS-Front-end-challenge?node-id=0%3A1) PS: O design system está incluso, incluindo a fonte.
-
-API: [API REST de produtos](https://mks-frontend-challenge-04811e8151e6.herokuapp.com/api-docs/) para exibir a lista de produtos da loja.
-
-Ferramentas requeridas
----------------
-
-1. TypeScript
-2. React ou Next.js (Preferimos Next.js)
-3. React-query
-4. Styled-components
-5. Jest
-
-Aspectos técnicos
----------------
-
-Todas as ferramentas listadas anteriormente são mandatórias, além delas sinta-se livre para utilizar de qualquer outra technologia que te seja confortável.
-
-Faça o deploy!
----------------
-
-Ao finalizar, faça o deploy no lugar que te for confortável (exemplo: Vercel, Netlify, Heroku, Amazon EC2, App Runner, etc)
+```bash
+npm run dev
